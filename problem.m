@@ -13,9 +13,9 @@ x
 disp(x);    %Outputs the x absorbed by the human body.
 
 out1=a*x;   %Store the multiplied value by x in out1.
-out2=a*xx;  %a와 inv함수를 이용해 구한 xx를 곱한 값을 out2에 저장합니다. 이값은 이론상으로 output과 같습니다
+out2=a*xx;  %Store the multiplied value by xx in out2.
 
-plot(t,out1);   %t를 가로축으로 하는 out1을 2차원 평면에 표현합니다.
+plot(t,out1);   %Express out1 with t as the horizontal axis on a two-dimensional plane.
 
 for id=1:20
     if(x(id)==xx(id))   
