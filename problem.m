@@ -19,8 +19,8 @@ plot(t,out1);   %Express out1 with t as the horizontal axis on a two-dimensional
 
 for id=1:20
     if(x(id)==xx(id))   
-        disp("같습니다");
+        disp("same.");
     else    
-        disp("다릅니다");
+        disp("different.");
     end
 end
