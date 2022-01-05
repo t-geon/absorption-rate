@@ -1,9 +1,9 @@
-t=0.01:0.01:0.2;    %t는 시간을 나타내며 0.01초부터 0.01초씩 0.2초가 될 때까지 증가하는 값을 갖습니다. 
-freq=11:30; %freq은 11부터 30까지 1씩증가하는 값을 같습니다.
+t=0.01:0.01:0.2;    %t is time. It increases by 0.01 sec from 0.01 sec to 0.2 sec.
+freq=11:30; %freq increases by 1 from 11 to 30.
 
-for i=1:20  %입력 값으로 20x20의 배열이 생성됩니다. 0.01초에 20개의 정현파를 쏘는데 0.2초까지 이기 때문입니다.
-    a(1:20,i)=cos(2*pi*freq(i)*t);  %과제에 주어진 input으로 a배열의 각행을 초단위로 구분해 몸으로 들어가는 입력신호를 저장합니다.
-end %for i=1:20를 끝냅니다.
+for i=1:20  %An array of 20x20 is created with the input values.
+    a(1:20,i)=cos(2*pi*freq(i)*t);  %It stores the input signal entering the body by dividing the rows of the array by seconds.
+end 
 
 load('output.mat')  %output.mat에 있는 출력값을 매트랩으로 가져옵니다
 x=slv(a,output);    %입력인 a와 출력인output을 slv함수에 전달해 함수를 진행한 후 x에 값을 저장합니다.
