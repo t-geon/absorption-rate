@@ -42,7 +42,7 @@ for k=n:-1:1
         t=t+U(k,j)*x(j);    % Store the Ux value in t.
     end
     x(k)=(c(k)-t)/U(k,k);   %Find x in the same way that c was obtained above.
- 
 end
+
 x=x';   %Since x is stored in one row, we need to transpose it.
 end
