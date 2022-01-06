@@ -3,9 +3,9 @@ function  x=slv(A,b)    %This is a function that takes a matrix A and a vector b
 [n,n]=size(A);  %Store the number of rows and columns of matrix A in [n,n].
 change=0;   %This is a variable indicating whether or not row conversion has occurred in slu.
 
-for z=1:n   %대각선 성분을 검사하기 위해 1부터 n까지 반복하는 반복문입니다.
-    if(I(z,z)~=1)   %행변환이 일어나서 I의 대각성분이 1이 아닌 곳이 있으면 if문으로 들어갑니다.
-        change=1;   %행변환이 일어나 대각성분에 1이 없는 곳이 있다면 change를 1로 변경합니다.
+for z=1:n 
+    if(I(z,z)~=1) 
+        change=1;   %If there is a row change where there is no 1 in the diagonal component, change the change to 1.
         break;
     end
 end
@@ -16,15 +16,15 @@ if change==1
 end
 
 for k=1:n
-   L(k,k)=1;    %k행 k열 자리에 1을 넣어줍니다.(결과적으로 대각성분에 1이 저장됩니다.)
+   L(k,k)=1;    %Put 1 in the place of k rows and k columns. (As a result, 1 is stored in the diagonal component.)
    for i=k+1:n
-       L(i,k)=A(i,k)/A(k,k);    %A의 i행 k열의 mutiplier를 L에 i행 k열에 저장합니다.
+       L(i,k)=A(i,k)/A(k,k);    %Store the mutiplier in row i k column of A in row i k column in L.
        for j=k+1:n
-           A(i,j)=A(i,j)-L(i,k)*A(k,j); %A행렬에 elimination을 해주는 코드입니다.(A에 multiplier를 곱한 뒤 A에빼줍니다. )
+           A(i,j)=A(i,j)-L(i,k)*A(k,j); %This is the code that performs elimination on matrix A. (Multiplier A by multiplier and subtract from A.)
        end
    end
    for j=k:n
-       U(k,j)=A(k,j);   %A행렬을 elimination하고 생긴 행렬을 U에 저장합니다.(역삼각형)
+       U(k,j)=A(k,j);   %Eliminate matrix A and store the resulting matrix in U. (Inverted triangle)
    end
 end
 
