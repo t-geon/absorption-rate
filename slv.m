@@ -1,7 +1,7 @@
-function  x=slv(A,b)    %A행렬,b벡터를 받아 x를 구하는 함수입니다.
-[L,U,I]=slu(A); %slu함수에 A를 넣어 생선된 L,U,I1,I2행렬을 L,U,I1,I2로 반환합니다.
-[n,n]=size(A);  %[n,n]에 A행렬의 행과 열의 갯수를 저장합니다.
-change=0;   %slu에서 행변환이 일어났는지 아닌지를 표시하는 변수입니다
+function  x=slv(A,b)    %This is a function that takes a matrix A and a vector b and finds x.
+[L,U,I]=slu(A); %The L,U,I1,I2 matrices created by putting A into the slu function are returned as L,U,I1,I2.
+[n,n]=size(A);  %Store the number of rows and columns of matrix A in [n,n].
+change=0;   %This is a variable indicating whether or not row conversion has occurred in slu.
 
 for z=1:n   %대각선 성분을 검사하기 위해 1부터 n까지 반복하는 반복문입니다.
     if(I(z,z)~=1)   %행변환이 일어나서 I의 대각성분이 1이 아닌 곳이 있으면 if문으로 들어갑니다.
