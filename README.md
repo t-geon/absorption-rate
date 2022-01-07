@@ -1,12 +1,12 @@
 # absorption-rate
 
-input = 사람의 몸에 흘러 보내는 값
-output = 사람의 몸에서 흘러 나오는 값
+input = The value that flows through the human body
+output = value flowing out of a person's body
 
-input과 output을 이용해 사람의 몸의 흡수율인 x를 구하는 프로젝트입니다.
+This is a project to find x, the absorption rate of the human body, using input and output.
 
-해당 프로젝트는 linear inverse problem으로 생각하면 쉽게 풀 수 있습니다.
-개념적으로는 사람의 몸의 흡수율을 측정할 수 없기 때문에 신호코드와 결과 값으로 추측합니다.
+The project can be easily solved by thinking of it as a linear inverse problem.
+Conceptually, the absorption rate of the human body cannot be measured, so it is guessed by the signal code and the resulting value.
 
 즉 Ax=b를 생각하면 쉽게 풀 수 있습니다.
 A는 신호코드로 입력 값이고 b는 결과표로 출력 값으로 볼 수 있습니다.
