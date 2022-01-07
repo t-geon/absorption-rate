@@ -23,5 +23,9 @@ Ax=b에서 b역할을 하는 output은 주어진 output.mat파일에 있습니�
 즉 load('output.mat')는 output.mat에 있는 값을 가져와주는 동작을 합니다
 위에서 말한 a와 output을 slu, slv함수에 적용하면 x를 구할 수 있습니다.
 
-inv함수를 이용해 xx를 구했습니다. 방법을 간단하게 Ax=b를 이용해 설명하겠습니다. Ax=b에서 A의 역행렬을 양변에 곱해줍니다. 그렇다면 Ax=b이 x=A의 역행렬*b가 됩니다. Inv는 행렬의 역행렬을 구해주는 함수로 x=A의 역행렬*b와 xx=inv(a)*output은 같습니다. 저는 a*xx를 한 값을 out2에 넣어줬습니다.
-
+inv함수를 이용해 xx를 구했습니다.
+Ax=b를 이용해 설명하겠습니다.
+Ax=b에서 A의 역행렬을 양변에 곱해줍니다. 
+-> Ax=b이 x=A의 역행렬* b가 됩니다.
+Inv는 행렬의 역행렬을 구해주는 함수로 x = A의 역행렬* b와 xx = inv(a) * output은 같습니다.
+저는 a * xx를 한 값을 out2에 넣어줬습니다.
