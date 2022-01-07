@@ -7,8 +7,8 @@ This is a project to find x, the absorption rate of the human body, using input 
 
 The project can be easily solved by thinking of it as a linear inverse problem.
 Conceptually, the absorption rate of the human body cannot be measured, so it is guessed by the signal code and the resulting value.
+it can be easily solved by thinking of Ax=b.
 
-즉 Ax=b를 생각하면 쉽게 풀 수 있습니다.
 A는 신호코드로 입력 값이고 b는 결과표로 출력 값으로 볼 수 있습니다.
 Ax=b는 A와 b를 알 때 slu함수와 slv함수를 이용해서 x를 구할 수 있습니다. 
 
