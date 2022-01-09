@@ -18,10 +18,10 @@ For example, row 1,column 1 of a are the input value (the value that flows throu
 Rows 1 and 2 are input values made at 12 Hz in 0.01 sec.
 In this way, all input values are initialized to a.
 
-Ax=b에서 b역할을 하는 output은 주어진 output.mat파일에 있습니다.
-이를 사용하기 위해서는 load함수를 사용해야 합니다.
-즉 load('output.mat')는 output.mat에 있는 값을 가져와주는 동작을 합니다
-위에서 말한 a와 output을 slu, slv함수에 적용하면 x를 구할 수 있습니다.
+The output serving b at Ax=b is in the given output.mat file.
+To use it, you need to use the load function.
+That is, load('output.mat') takes the value in output.mat.
+By applying the above a and output to the slu and slv functions, x can be obtained.
 
 inv함수를 이용해 xx를 구했습니다.
 Ax=b를 이용해 설명하겠습니다.
