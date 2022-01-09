@@ -23,9 +23,9 @@ To use it, you need to use the load function.
 That is, load('output.mat') takes the value in output.mat.
 By applying the above a and output to the slu and slv functions, x can be obtained.
 
-inv함수를 이용해 xx를 구했습니다.
-Ax=b를 이용해 설명하겠습니다.
-Ax=b에서 A의 역행렬을 양변에 곱해줍니다. 
--> Ax=b이 x=A의 역행렬* b가 됩니다.
-Inv는 행렬의 역행렬을 구해주는 함수로 x = A의 역행렬* b와 xx = inv(a) * output은 같습니다.
-저는 a * xx를 한 값을 out2에 넣어줬습니다.
+I found xx using the inv function.
+I'll explain using Ax=b.
+Multiply both sides by the inverse of A at Ax=b.
+-> Ax=b becomes the inverse of x=A* b.
+Inv is a function that finds the inverse of a matrix. The inverse of x = A* b and xx = inv(a) * output are the same.
+I put the value of a * xx in out2.
