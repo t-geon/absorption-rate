@@ -1,5 +1,5 @@
-function  x=slv(A,b)    %This is a function that takes a matrix A and a vector b and finds x.
-[L,U,I]=slu(A); %The L,U,I1,I2 matrices created by putting A into the slu function are returned as L,U,I1,I2.
+function  x=slv(A,b)  
+[L,U,I]=slu(A);
 [n,n]=size(A);  %Store the number of rows and columns of matrix A in [n,n].
 change=0;   %This is a variable indicating whether or not row conversion has occurred in slu.
 
