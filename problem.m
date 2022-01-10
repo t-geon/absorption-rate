@@ -1,7 +1,7 @@
 t=0.01:0.01:0.2;    %t is time. It increases by 0.01 sec from 0.01 sec to 0.2 sec.
 freq=11:30; %freq increases by 1 from 11 to 30.
 
-for i=1:20  %An array of 20x20 is created with the input values.
+for i=1:20  
     a(1:20,i)=cos(2*pi*freq(i)*t);  %It stores the input signal entering the body by dividing the rows of the array by seconds.
 end 
 
