@@ -1,5 +1,5 @@
-function [L,U,I]=slu(A) %Take A as input and get L and U
-[n,n]=size(A);  %Store the number of rows and columns of matrix A in [n,n].
+function [L,U,I]=slu(A) 
+[n,n]=size(A); 
 tol=1.e-6;  %tol is 10 to the -6 power.
 I=eye(n,n); %This is a matrix that stores the information changed before elimination (used to replace b in slv).
 for k=1:n
